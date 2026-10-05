@@ -31,6 +31,8 @@ There is also a **visual check** on the home screen if you are not sure of the n
 Drop captioned source plates into `raw/` and run:
 
 ```bash
+python3 -m pip install -r scripts/requirements-plates.txt
+sudo apt-get install -y tesseract-ocr   # macOS: brew install tesseract
 python3 scripts/process_plates.py raw public/images
 ```
 
